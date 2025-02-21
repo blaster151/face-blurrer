@@ -35,4 +35,11 @@ ENV/
 input/*
 output/*
 !input/.gitkeep
-!output/.gitkeep 
+!output/.gitkeep
+
+# Allow samples directory
+!samples/
+!samples/input/
+!samples/output/
+!samples/input/*
+!samples/output/* 

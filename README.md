@@ -32,12 +32,26 @@ python main.py
 ```
 3. Find the processed images in the `output` directory
 
+### Sample Images
+
+The repository includes sample images in the `samples` directory to demonstrate the tool's capabilities:
+- `samples/input/`: Contains example input images
+- `samples/output/`: Shows the corresponding blurred outputs
+
+You can use these samples to:
+- Understand how the tool processes different types of images
+- Test that your installation is working correctly
+- See the quality and style of face blurring you can expect
+
 ## Directory Structure
 
 ```
 face-blurrer/
 ├── input/          # Place input images here
 ├── output/         # Blurred images will be saved here
+├── samples/        # Example images
+│   ├── input/     # Sample input images
+│   └── output/    # Sample output images
 ├── main.py         # Main script
 └── requirements.txt
 ```
