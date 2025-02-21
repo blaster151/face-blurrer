@@ -94,14 +94,14 @@ class FaceBlurrer:
         face_axes = (int(width // 2.1), int(height // 1.8))
         cv2.ellipse(mask, center, face_axes, 0, 0, 360, 255, -1)
 
-        # Much taller hair region
-        hair_center = (center[0], int(center[1] - height * 0.4))  # Move up more
-        hair_axes = (int(width // 2.3), int(height * 1.0))  # Full height
+        # More conservative hair region
+        hair_center = (center[0], int(center[1] - height * 0.25))  # Reduced upward shift
+        hair_axes = (int(width // 2.3), int(height * 0.7))  # Reduced height
         cv2.ellipse(mask, hair_center, hair_axes, 0, 0, 180, 255, -1)
 
-        # Additional top coverage
-        top_center = (center[0], int(height * 0.2))  # Very high up
-        top_axes = (int(width // 2.5), int(height * 0.5))
+        # Reduced top coverage
+        top_center = (center[0], int(height * 0.3))  # Lower top point
+        top_axes = (int(width // 2.5), int(height * 0.3))  # Reduced height
         cv2.ellipse(mask, top_center, top_axes, 0, 0, 180, 255, -1)
 
         # Smooth the mask edges
@@ -112,16 +112,42 @@ class FaceBlurrer:
         # Convert to grayscale
         gray = cv2.cvtColor(face_region, cv2.COLOR_BGR2GRAY)
 
-        # Check top third of the image for significant edges/content
-        top_third = gray[: gray.shape[0] // 3, :]
-        edges = cv2.Canny(top_third, 30, 150)
+        # Check top quarter of the image for significant edges/content
+        top_quarter = gray[: gray.shape[0] // 4, :]
+        
+        # Split into left and right halves to check for uneven lighting
+        left_half = top_quarter[:, :top_quarter.shape[1]//2]
+        right_half = top_quarter[:, top_quarter.shape[1]//2:]
+        
+        # Calculate stats for both halves
+        left_std = np.std(left_half)
+        right_std = np.std(right_half)
+        print(f"DEBUG: Left std: {left_std:.3f}, Right std: {right_std:.3f}")
+
+        # If one side is much darker than the other, it might be background
+        if abs(left_std - right_std) > 20:
+            print("DEBUG: Uneven lighting detected - might be background interference")
+            return False
+
+        # Regular edge detection
+        edges = cv2.Canny(top_quarter, 75, 150)
         edge_density = np.count_nonzero(edges) / edges.size
 
-        # Check for significant contrast in top portion
-        std_dev = np.std(top_third)
+        # Overall contrast
+        std_dev = np.std(top_quarter)
 
-        # Return True if there's significant hair/feature content above face
-        return edge_density > 0.1 or std_dev > 25
+        # Look for dark pixels in the center top area only
+        center_slice = top_quarter[:, top_quarter.shape[1]//4:3*top_quarter.shape[1]//4]
+        dark_threshold = 60
+        dark_pixels = np.sum(center_slice < dark_threshold) / center_slice.size
+
+        print(f"DEBUG: Edge density: {edge_density:.3f}, Std dev: {std_dev:.3f}, Center dark pixels: {dark_pixels:.3f}")
+        print(f"DEBUG: Thresholds - Edge density > 0.2, Std dev > 55, Dark pixels > 0.4")
+        
+        # Require higher std_dev AND significant dark pixels in center for hair detection
+        should_extend = (edge_density > 0.2 or std_dev > 55) and dark_pixels > 0.4
+        print(f"DEBUG: Should extend blur: {should_extend}")
+        return should_extend
 
     def calculate_blur_height(self, face_region, base_height):
         # Convert to grayscale
@@ -157,20 +183,21 @@ class FaceBlurrer:
 
     def detect_hair_region(self, image, face_bbox):
         x, y, width, height = face_bbox
+        print(f"DEBUG: Original face bbox - x:{x}, y:{y}, w:{width}, h:{height}")
 
         # Look above the face
-        search_height = int(height * 2)  # Look up to 2x face height
+        search_height = int(height * 2)
         top_y = max(0, y - search_height)
+        print(f"DEBUG: Searching for hair up to {search_height}px above face (y={top_y})")
 
         # Extract region above face
         hair_region = image[top_y : y + height // 2, x : x + width]
         if hair_region.size == 0:
+            print("DEBUG: No space above face to check for hair")
             return None
 
         # Convert to HSV for better hair detection
         hsv = cv2.cvtColor(hair_region, cv2.COLOR_BGR2HSV)
-
-        # Create mask for likely hair pixels
         lower_bounds = np.array([0, 0, 0])
         upper_bounds = np.array([180, 255, 180])
         hair_mask = cv2.inRange(hsv, lower_bounds, upper_bounds)
@@ -178,12 +205,18 @@ class FaceBlurrer:
         # Find the highest point with significant hair content
         rows = np.sum(hair_mask, axis=1)
         significant_rows = np.where(rows > width * 0.3)[0]
-
+        
         if len(significant_rows) > 0:
-            return (x, top_y, width, y - top_y + height // 2)
+            print(f"DEBUG: Found significant hair content in {len(significant_rows)} rows")
+            result = (x, top_y, width, y - top_y + height // 2)
+            print(f"DEBUG: New region with hair - x:{result[0]}, y:{result[1]}, w:{result[2]}, h:{result[3]}")
+            return result
+        
+        print("DEBUG: No significant hair content found")
         return None
 
     def blur_faces(self, input_path, output_path):
+        print(f"\nProcessing {os.path.basename(input_path)}")
         # Read image
         image = cv2.imread(input_path)
         if image is None:
@@ -208,7 +241,8 @@ class FaceBlurrer:
 
         if detections:
             print(f"Found {len(detections)} faces")
-            for detection in detections:
+            for i, detection in enumerate(detections):
+                print(f"\nProcessing face #{i+1}")
                 bbox = detection.location_data.relative_bounding_box
                 h, w, _ = image.shape
 
@@ -217,29 +251,48 @@ class FaceBlurrer:
                 y = int(bbox.ymin * h)
                 width = int(bbox.width * w)
                 height = int(bbox.height * h)
+                print(f"DEBUG: Initial face dimensions - x:{x}, y:{y}, w:{width}, h:{height}")
 
-                # Detect hair region
-                hair_bbox = self.detect_hair_region(image, (x, y, width, height))
-
-                if hair_bbox is not None:
-                    # Combine face and hair regions
-                    x, y = hair_bbox[0], hair_bbox[1]
-                    height = (hair_bbox[1] + hair_bbox[3]) - y
+                # Only detect hair region if needed
+                face_region = image[y : y + height, x : x + width]
+                print("\nChecking if blur should be extended:")
+                should_extend = self.should_extend_blur(face_region)
+                
+                if should_extend:
+                    print("DEBUG: Attempting to detect hair region")
+                    hair_bbox = self.detect_hair_region(image, (x, y, width, height))
+                    if hair_bbox is not None:
+                        old_height = height
+                        x, y = hair_bbox[0], hair_bbox[1]
+                        height = (hair_bbox[1] + hair_bbox[3]) - y
+                        print(f"DEBUG: Height increased from {old_height} to {height}")
+                    else:
+                        print("DEBUG: No hair region detected despite high edge content")
+                else:
+                    print("DEBUG: Using standard face region (no extension needed)")
 
                 # Get the combined region
                 face_region = image[y : y + height, x : x + width]
+                print(f"DEBUG: Final region dimensions - x:{x}, y:{y}, w:{width}, h:{height}")
 
                 # Create mask
-                mask = np.zeros((height, width), dtype=np.uint8)
+                print("\nCreating blur mask:")
+                if should_extend:  # Use the same decision we made earlier
+                    print("DEBUG: Using extended adaptive hair mask")
+                    mask = self.create_adaptive_hair_mask(height, width)
+                else:
+                    print("DEBUG: Using standard face mask")
+                    mask = np.zeros((height, width), dtype=np.uint8)
+                    center = (width // 2, height // 2)
+                    # Make the standard mask slightly taller but still compact
+                    face_axes = (int(width // 1.9), int(height // 1.4))
+                    cv2.ellipse(mask, center, face_axes, 0, 0, 360, 255, -1)
+                    # Add a small upper extension for forehead
+                    top_center = (center[0], int(height * 0.35))
+                    top_axes = (int(width // 2.2), int(height * 0.2))
+                    cv2.ellipse(mask, top_center, top_axes, 0, 0, 180, 255, -1)
 
-                # Fill the entire region
-                cv2.rectangle(mask, (0, 0), (width, height), 255, -1)
-
-                # Add oval bottom for better transition
-                bottom_center = (width // 2, height - height // 4)
-                bottom_axes = (int(width // 1.8), int(height // 2))
-                cv2.ellipse(mask, bottom_center, bottom_axes, 0, 0, 180, 255, -1)
-
+                print("DEBUG: Applying final blur")
                 # Smooth the mask
                 mask = cv2.GaussianBlur(mask, (31, 31), 10)
                 mask_3d = np.stack([mask] * 3, axis=2) / 255.0
