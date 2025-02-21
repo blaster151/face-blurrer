@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import shutil  # Add shutil import
 
 import cv2
 import numpy as np
@@ -268,6 +269,14 @@ class ActorNameConcealer:
         print(f"Saved processed image to {output_path}")
         return True
 
+    def copy_to_temp(self, source_path, filename):
+        """Copy a file to the temp directory while preserving its name."""
+        temp_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "temp")
+        Path(temp_dir).mkdir(parents=True, exist_ok=True)
+        temp_path = os.path.join(temp_dir, f"2_names_{filename}")
+        shutil.copy2(source_path, temp_path)
+        print(f"Copied to temp: {temp_path}")
+
     def process_directory(self, input_dir, output_dir):
         """Process all images in the input directory."""
         Path(output_dir).mkdir(parents=True, exist_ok=True)
@@ -278,6 +287,7 @@ class ActorNameConcealer:
                 output_path = os.path.join(output_dir, f"nonames_{filename}")
                 if self.process_image(input_path, output_path):
                     print(f"Successfully processed {filename}")
+                    self.copy_to_temp(output_path, f"nonames_{filename}")  # Copy to temp
                 else:
                     print(f"Failed to process {filename}")
 
