@@ -209,8 +209,16 @@ class ActorNameConcealer:
             if self.is_actor_name(text, y, height):
                 print(f"Found potential actor name: {text}")
                 
-                # Shift y coordinates up by 10 pixels
-                y = max(0, y - 10)  # Ensure we don't go above image bounds
+                # Validate coordinates
+                x = max(0, min(x, width - 1))
+                y = max(0, min(y - 10, height - 1))  # Shift up by 10 pixels with bounds check
+                w = min(w, width - x)
+                h = min(h, height - y)
+                
+                # Skip if region is too small
+                if w < 2 or h < 2:
+                    print(f"Skipping too small region: {w}x{h}")
+                    continue
                 
                 # Calculate the main region with extra padding for pattern analysis
                 x1 = max(0, x - self.padding_x * 2)
@@ -218,9 +226,30 @@ class ActorNameConcealer:
                 x2 = min(width, x + w + self.padding_x * 2)
                 y2 = min(height, y + h + self.padding_y * 2)
                 
+                # Validate region bounds
+                if x2 <= x1 or y2 <= y1:
+                    print(f"Invalid region bounds: ({x1}, {y1}, {x2}, {y2})")
+                    continue
+                
                 # Get the region of interest
                 roi = result[y1:y2, x1:x2]
-                if roi.size > 0:
+                if roi.size == 0:
+                    print(f"Empty ROI at coordinates: ({x1}, {y1}, {x2}, {y2})")
+                    continue
+                
+                # Get text region with validation
+                text_y = min(y + h, height)
+                text_x = min(x + w, width)
+                if y >= text_y or x >= text_x:
+                    print(f"Invalid text region bounds: ({x}, {y}, {text_x}, {text_y})")
+                    continue
+                    
+                text_region = result[y:text_y, x:text_x]
+                if text_region.size == 0:
+                    print(f"Empty text region at coordinates: ({x}, {y}, {text_x}, {text_y})")
+                    continue
+                
+                try:
                     # Convert ROI to grayscale for analysis
                     gray_roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
                     
@@ -231,9 +260,8 @@ class ActorNameConcealer:
                     direction_kernel = (self.direction_kernel_size, self.direction_kernel_size)
                     
                     # First pass: Strong blur to fully conceal text
-                    text_region = result[y:y+h, x:x+w]
                     blurred_text = cv2.GaussianBlur(text_region, (99, 99), 40)
-                    result[y:y+h, x:x+w] = blurred_text
+                    result[y:text_y, x:text_x] = blurred_text
                     
                     # Second pass: Directional blur for pattern preservation
                     roi = result[y1:y2, x1:x2]
@@ -263,6 +291,13 @@ class ActorNameConcealer:
                     # Final smoothing
                     result_roi = cv2.GaussianBlur(result_roi.astype(np.uint8), (3, 3), 0)
                     result[y1:y2, x1:x2] = result_roi
+                    
+                except cv2.error as e:
+                    print(f"OpenCV error while processing region: {e}")
+                    continue
+                except Exception as e:
+                    print(f"Unexpected error while processing region: {e}")
+                    continue
 
         # Save the result
         cv2.imwrite(output_path, result)

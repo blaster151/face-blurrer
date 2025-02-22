@@ -1,0 +1,2858 @@
+{
+    "versions": {
+        "1": {
+            "timestamp": "2024-02-14",
+            "metrics": {
+                "Ad_Astra.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "high",
+                    "detection_method": "standard",
+                    "processing_time": null,
+                    "face_dimensions": [
+                        [
+                            62,
+                            154,
+                            32,
+                            32
+                        ]
+                    ]
+                },
+                "Sleepless_in_Seattle.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": null,
+                    "face_dimensions": [
+                        [
+                            62,
+                            154,
+                            32,
+                            32
+                        ],
+                        [
+                            377,
+                            147,
+                            41,
+                            41
+                        ]
+                    ]
+                },
+                "Dunkirk.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "silhouette",
+                    "processing_time": null,
+                    "face_dimensions": [
+                        [
+                            163,
+                            19,
+                            152,
+                            152
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 3,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 1.33,
+                "successful_detections": 2,
+                "failed_detections": 1
+            }
+        },
+        "2": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Ad Astra.webp": {
+                    "faces_detected": 2,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.07,
+                    "face_dimensions": [
+                        [
+                            25,
+                            97,
+                            121,
+                            121
+                        ],
+                        [
+                            159,
+                            127,
+                            24,
+                            24
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "3": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "batman.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.55,
+                    "face_dimensions": [
+                        [
+                            139,
+                            303,
+                            55,
+                            55
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "4": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "contact.webp": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.91,
+                    "face_dimensions": [
+                        [
+                            183,
+                            517,
+                            52,
+                            52
+                        ],
+                        [
+                            220,
+                            335,
+                            37,
+                            37
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "5": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "contact_jf.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 8.54,
+                    "face_dimensions": [
+                        [
+                            1068,
+                            336,
+                            228,
+                            228
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "6": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "dunkirk.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.08,
+                    "face_dimensions": [
+                        [
+                            254,
+                            285,
+                            33,
+                            33
+                        ],
+                        [
+                            201,
+                            136,
+                            260,
+                            260
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "7": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "favourite.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 16.15,
+                    "face_dimensions": [
+                        [
+                            278,
+                            454,
+                            1092,
+                            1092
+                        ],
+                        [
+                            1522,
+                            1298,
+                            137,
+                            137
+                        ],
+                        [
+                            982,
+                            1874,
+                            129,
+                            129
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "8": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "free_guy_ver2.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.23,
+                    "face_dimensions": [
+                        [
+                            213,
+                            249,
+                            52,
+                            52
+                        ],
+                        [
+                            96,
+                            311,
+                            43,
+                            43
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "9": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Gattaca.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.04,
+                    "face_dimensions": [
+                        [
+                            159,
+                            46,
+                            173,
+                            173
+                        ],
+                        [
+                            80,
+                            88,
+                            64,
+                            43
+                        ],
+                        [
+                            181,
+                            290,
+                            145,
+                            145
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "10": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "goonies.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.48,
+                    "face_dimensions": [
+                        [
+                            230,
+                            225,
+                            58,
+                            58
+                        ],
+                        [
+                            146,
+                            102,
+                            176,
+                            176
+                        ],
+                        [
+                            352,
+                            172,
+                            111,
+                            111
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "11": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "inception_ver3.jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.41,
+                    "face_dimensions": [
+                        [
+                            270,
+                            190,
+                            34,
+                            34
+                        ],
+                        [
+                            365,
+                            115,
+                            32,
+                            32
+                        ],
+                        [
+                            271,
+                            326,
+                            27,
+                            27
+                        ],
+                        [
+                            243,
+                            452,
+                            21,
+                            21
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "12": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "interstellar_ver2.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.27,
+                    "face_dimensions": [
+                        [
+                            224,
+                            101,
+                            41,
+                            41
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "13": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Pretty Woman (blue).jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 9.06,
+                    "face_dimensions": [
+                        [
+                            348,
+                            188,
+                            96,
+                            96
+                        ],
+                        [
+                            270,
+                            216,
+                            269,
+                            269
+                        ],
+                        [
+                            219,
+                            176,
+                            87,
+                            87
+                        ],
+                        [
+                            242,
+                            177,
+                            173,
+                            173
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "14": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Pretty Woman.jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 8.95,
+                    "face_dimensions": [
+                        [
+                            352,
+                            188,
+                            88,
+                            88
+                        ],
+                        [
+                            244,
+                            192,
+                            212,
+                            212
+                        ],
+                        [
+                            280,
+                            256,
+                            248,
+                            248
+                        ],
+                        [
+                            209,
+                            172,
+                            97,
+                            97
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "15": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "PrincessBride.png": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.31,
+                    "face_dimensions": [
+                        [
+                            188,
+                            278,
+                            30,
+                            30
+                        ],
+                        [
+                            267,
+                            338,
+                            144,
+                            144
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "16": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "searching_for_bobby_fischer.jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.37,
+                    "face_dimensions": [
+                        [
+                            163,
+                            19,
+                            152,
+                            152
+                        ],
+                        [
+                            242,
+                            30,
+                            136,
+                            136
+                        ],
+                        [
+                            208,
+                            0,
+                            291,
+                            291
+                        ],
+                        [
+                            341,
+                            177,
+                            153,
+                            153
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "17": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "sleepless_in_seattle.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.79,
+                    "face_dimensions": [
+                        [
+                            62,
+                            154,
+                            32,
+                            32
+                        ],
+                        [
+                            377,
+                            147,
+                            41,
+                            41
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "18": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "TheFavourite.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 16.11,
+                    "face_dimensions": [
+                        [
+                            278,
+                            454,
+                            1092,
+                            1092
+                        ],
+                        [
+                            1522,
+                            1298,
+                            137,
+                            137
+                        ],
+                        [
+                            982,
+                            1874,
+                            129,
+                            129
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "19": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Ad Astra.webp": {
+                    "faces_detected": 2,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.44,
+                    "face_dimensions": [
+                        [
+                            25,
+                            97,
+                            121,
+                            121
+                        ],
+                        [
+                            159,
+                            127,
+                            24,
+                            24
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "20": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "batman.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.23,
+                    "face_dimensions": [
+                        [
+                            139,
+                            303,
+                            55,
+                            55
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "21": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "contact.webp": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.86,
+                    "face_dimensions": [
+                        [
+                            183,
+                            517,
+                            52,
+                            52
+                        ],
+                        [
+                            220,
+                            335,
+                            37,
+                            37
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "22": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "contact_jf.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 9.46,
+                    "face_dimensions": [
+                        [
+                            1068,
+                            336,
+                            228,
+                            228
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "23": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "dunkirk.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.85,
+                    "face_dimensions": [
+                        [
+                            254,
+                            285,
+                            33,
+                            33
+                        ],
+                        [
+                            201,
+                            136,
+                            260,
+                            260
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "24": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "favourite.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 16.26,
+                    "face_dimensions": [
+                        [
+                            278,
+                            454,
+                            1092,
+                            1092
+                        ],
+                        [
+                            1522,
+                            1298,
+                            137,
+                            137
+                        ],
+                        [
+                            982,
+                            1874,
+                            129,
+                            129
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "25": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "free_guy_ver2.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.07,
+                    "face_dimensions": [
+                        [
+                            213,
+                            249,
+                            52,
+                            52
+                        ],
+                        [
+                            96,
+                            311,
+                            43,
+                            43
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "26": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Gattaca.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.29,
+                    "face_dimensions": [
+                        [
+                            159,
+                            46,
+                            173,
+                            173
+                        ],
+                        [
+                            80,
+                            88,
+                            64,
+                            43
+                        ],
+                        [
+                            181,
+                            290,
+                            145,
+                            145
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "27": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "goonies.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.94,
+                    "face_dimensions": [
+                        [
+                            230,
+                            225,
+                            58,
+                            58
+                        ],
+                        [
+                            146,
+                            102,
+                            176,
+                            176
+                        ],
+                        [
+                            352,
+                            172,
+                            111,
+                            111
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "28": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "inception_ver3.jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.23,
+                    "face_dimensions": [
+                        [
+                            270,
+                            190,
+                            34,
+                            34
+                        ],
+                        [
+                            365,
+                            115,
+                            32,
+                            32
+                        ],
+                        [
+                            271,
+                            326,
+                            27,
+                            27
+                        ],
+                        [
+                            243,
+                            452,
+                            21,
+                            21
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "29": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "interstellar_ver2.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.97,
+                    "face_dimensions": [
+                        [
+                            224,
+                            101,
+                            41,
+                            41
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "30": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Pretty Woman (blue).jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 9.07,
+                    "face_dimensions": [
+                        [
+                            348,
+                            188,
+                            96,
+                            96
+                        ],
+                        [
+                            270,
+                            216,
+                            269,
+                            269
+                        ],
+                        [
+                            219,
+                            176,
+                            87,
+                            87
+                        ],
+                        [
+                            242,
+                            177,
+                            173,
+                            173
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "31": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Pretty Woman.jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 9.36,
+                    "face_dimensions": [
+                        [
+                            352,
+                            188,
+                            88,
+                            88
+                        ],
+                        [
+                            244,
+                            192,
+                            212,
+                            212
+                        ],
+                        [
+                            280,
+                            256,
+                            248,
+                            248
+                        ],
+                        [
+                            209,
+                            172,
+                            97,
+                            97
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "32": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "PrincessBride.png": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.99,
+                    "face_dimensions": [
+                        [
+                            188,
+                            278,
+                            30,
+                            30
+                        ],
+                        [
+                            267,
+                            338,
+                            144,
+                            144
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "33": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "searching_for_bobby_fischer.jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.15,
+                    "face_dimensions": [
+                        [
+                            163,
+                            19,
+                            152,
+                            152
+                        ],
+                        [
+                            242,
+                            30,
+                            136,
+                            136
+                        ],
+                        [
+                            208,
+                            0,
+                            291,
+                            291
+                        ],
+                        [
+                            341,
+                            177,
+                            153,
+                            153
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "34": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "sleepless_in_seattle.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.89,
+                    "face_dimensions": [
+                        [
+                            62,
+                            154,
+                            32,
+                            32
+                        ],
+                        [
+                            377,
+                            147,
+                            41,
+                            41
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "35": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "TheFavourite.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 15.85,
+                    "face_dimensions": [
+                        [
+                            278,
+                            454,
+                            1092,
+                            1092
+                        ],
+                        [
+                            1522,
+                            1298,
+                            137,
+                            137
+                        ],
+                        [
+                            982,
+                            1874,
+                            129,
+                            129
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "36": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Ad Astra.webp": {
+                    "faces_detected": 2,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.07,
+                    "face_dimensions": [
+                        [
+                            25,
+                            97,
+                            121,
+                            121
+                        ],
+                        [
+                            159,
+                            127,
+                            24,
+                            24
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "37": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "batman.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.83,
+                    "face_dimensions": [
+                        [
+                            139,
+                            303,
+                            55,
+                            55
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "38": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "contact.webp": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.38,
+                    "face_dimensions": [
+                        [
+                            183,
+                            517,
+                            52,
+                            52
+                        ],
+                        [
+                            220,
+                            335,
+                            37,
+                            37
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "39": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "contact_jf.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 9.92,
+                    "face_dimensions": [
+                        [
+                            1068,
+                            336,
+                            228,
+                            228
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "40": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "dunkirk.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.0,
+                    "face_dimensions": [
+                        [
+                            254,
+                            285,
+                            33,
+                            33
+                        ],
+                        [
+                            201,
+                            136,
+                            260,
+                            260
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "41": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "favourite.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 16.77,
+                    "face_dimensions": [
+                        [
+                            278,
+                            454,
+                            1092,
+                            1092
+                        ],
+                        [
+                            1522,
+                            1298,
+                            137,
+                            137
+                        ],
+                        [
+                            982,
+                            1874,
+                            129,
+                            129
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "42": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "free_guy_ver2.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.22,
+                    "face_dimensions": [
+                        [
+                            213,
+                            249,
+                            52,
+                            52
+                        ],
+                        [
+                            96,
+                            311,
+                            43,
+                            43
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "43": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Gattaca.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.3,
+                    "face_dimensions": [
+                        [
+                            159,
+                            46,
+                            173,
+                            173
+                        ],
+                        [
+                            80,
+                            88,
+                            64,
+                            43
+                        ],
+                        [
+                            181,
+                            290,
+                            145,
+                            145
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "44": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "goonies.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.64,
+                    "face_dimensions": [
+                        [
+                            230,
+                            225,
+                            58,
+                            58
+                        ],
+                        [
+                            146,
+                            102,
+                            176,
+                            176
+                        ],
+                        [
+                            352,
+                            172,
+                            111,
+                            111
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "45": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "inception_ver3.jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.32,
+                    "face_dimensions": [
+                        [
+                            270,
+                            190,
+                            34,
+                            34
+                        ],
+                        [
+                            365,
+                            115,
+                            32,
+                            32
+                        ],
+                        [
+                            271,
+                            326,
+                            27,
+                            27
+                        ],
+                        [
+                            243,
+                            452,
+                            21,
+                            21
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "46": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "interstellar_ver2.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.66,
+                    "face_dimensions": [
+                        [
+                            224,
+                            101,
+                            41,
+                            41
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "47": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Ad Astra.webp": {
+                    "faces_detected": 2,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.27,
+                    "face_dimensions": [
+                        [
+                            25,
+                            97,
+                            121,
+                            121
+                        ],
+                        [
+                            159,
+                            127,
+                            24,
+                            24
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "48": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "batman.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.09,
+                    "face_dimensions": [
+                        [
+                            139,
+                            303,
+                            55,
+                            55
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "49": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "contact.webp": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.73,
+                    "face_dimensions": [
+                        [
+                            183,
+                            517,
+                            52,
+                            52
+                        ],
+                        [
+                            220,
+                            335,
+                            37,
+                            37
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "50": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "contact_jf.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 9.46,
+                    "face_dimensions": [
+                        [
+                            1068,
+                            336,
+                            228,
+                            228
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "51": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "dunkirk.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.33,
+                    "face_dimensions": [
+                        [
+                            254,
+                            285,
+                            33,
+                            33
+                        ],
+                        [
+                            201,
+                            136,
+                            260,
+                            260
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "52": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "favourite.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 16.57,
+                    "face_dimensions": [
+                        [
+                            278,
+                            454,
+                            1092,
+                            1092
+                        ],
+                        [
+                            1522,
+                            1298,
+                            137,
+                            137
+                        ],
+                        [
+                            982,
+                            1874,
+                            129,
+                            129
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "53": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "free_guy_ver2.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.87,
+                    "face_dimensions": [
+                        [
+                            213,
+                            249,
+                            52,
+                            52
+                        ],
+                        [
+                            96,
+                            311,
+                            43,
+                            43
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "54": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Gattaca.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.19,
+                    "face_dimensions": [
+                        [
+                            159,
+                            46,
+                            173,
+                            173
+                        ],
+                        [
+                            80,
+                            88,
+                            64,
+                            43
+                        ],
+                        [
+                            181,
+                            290,
+                            145,
+                            145
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "55": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "goonies.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 6.0,
+                    "face_dimensions": [
+                        [
+                            230,
+                            225,
+                            58,
+                            58
+                        ],
+                        [
+                            146,
+                            102,
+                            176,
+                            176
+                        ],
+                        [
+                            352,
+                            172,
+                            111,
+                            111
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "56": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "inception_ver3.jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.79,
+                    "face_dimensions": [
+                        [
+                            270,
+                            190,
+                            34,
+                            34
+                        ],
+                        [
+                            365,
+                            115,
+                            32,
+                            32
+                        ],
+                        [
+                            271,
+                            326,
+                            27,
+                            27
+                        ],
+                        [
+                            243,
+                            452,
+                            21,
+                            21
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "57": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "interstellar_ver2.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.75,
+                    "face_dimensions": [
+                        [
+                            224,
+                            101,
+                            41,
+                            41
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "58": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Pretty Woman (blue).jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 8.15,
+                    "face_dimensions": [
+                        [
+                            348,
+                            188,
+                            96,
+                            96
+                        ],
+                        [
+                            270,
+                            216,
+                            269,
+                            269
+                        ],
+                        [
+                            219,
+                            176,
+                            87,
+                            87
+                        ],
+                        [
+                            242,
+                            177,
+                            173,
+                            173
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "59": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Pretty Woman.jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 8.99,
+                    "face_dimensions": [
+                        [
+                            352,
+                            188,
+                            88,
+                            88
+                        ],
+                        [
+                            244,
+                            192,
+                            212,
+                            212
+                        ],
+                        [
+                            280,
+                            256,
+                            248,
+                            248
+                        ],
+                        [
+                            209,
+                            172,
+                            97,
+                            97
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "60": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "PrincessBride.png": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.01,
+                    "face_dimensions": [
+                        [
+                            188,
+                            278,
+                            30,
+                            30
+                        ],
+                        [
+                            267,
+                            338,
+                            144,
+                            144
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "61": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "searching_for_bobby_fischer.jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.6,
+                    "face_dimensions": [
+                        [
+                            163,
+                            19,
+                            152,
+                            152
+                        ],
+                        [
+                            242,
+                            30,
+                            136,
+                            136
+                        ],
+                        [
+                            208,
+                            0,
+                            291,
+                            291
+                        ],
+                        [
+                            341,
+                            177,
+                            153,
+                            153
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "62": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "sleepless_in_seattle.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.02,
+                    "face_dimensions": [
+                        [
+                            62,
+                            154,
+                            32,
+                            32
+                        ],
+                        [
+                            377,
+                            147,
+                            41,
+                            41
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "63": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "TheFavourite.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 16.12,
+                    "face_dimensions": [
+                        [
+                            278,
+                            454,
+                            1092,
+                            1092
+                        ],
+                        [
+                            1522,
+                            1298,
+                            137,
+                            137
+                        ],
+                        [
+                            982,
+                            1874,
+                            129,
+                            129
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "64": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Ad Astra.webp": {
+                    "faces_detected": 2,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.64,
+                    "face_dimensions": [
+                        [
+                            25,
+                            97,
+                            121,
+                            121
+                        ],
+                        [
+                            159,
+                            127,
+                            24,
+                            24
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "65": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "batman.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.89,
+                    "face_dimensions": [
+                        [
+                            139,
+                            303,
+                            55,
+                            55
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "66": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "contact.webp": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.95,
+                    "face_dimensions": [
+                        [
+                            183,
+                            517,
+                            52,
+                            52
+                        ],
+                        [
+                            220,
+                            335,
+                            37,
+                            37
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "67": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "contact_jf.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 9.79,
+                    "face_dimensions": [
+                        [
+                            1068,
+                            336,
+                            228,
+                            228
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "68": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "dunkirk.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.56,
+                    "face_dimensions": [
+                        [
+                            254,
+                            285,
+                            33,
+                            33
+                        ],
+                        [
+                            201,
+                            136,
+                            260,
+                            260
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "69": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "favourite.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 16.19,
+                    "face_dimensions": [
+                        [
+                            278,
+                            454,
+                            1092,
+                            1092
+                        ],
+                        [
+                            1522,
+                            1298,
+                            137,
+                            137
+                        ],
+                        [
+                            982,
+                            1874,
+                            129,
+                            129
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "70": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "free_guy_ver2.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.86,
+                    "face_dimensions": [
+                        [
+                            213,
+                            249,
+                            52,
+                            52
+                        ],
+                        [
+                            96,
+                            311,
+                            43,
+                            43
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "71": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Gattaca.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.05,
+                    "face_dimensions": [
+                        [
+                            159,
+                            46,
+                            173,
+                            173
+                        ],
+                        [
+                            80,
+                            88,
+                            64,
+                            43
+                        ],
+                        [
+                            181,
+                            290,
+                            145,
+                            145
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "72": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "goonies.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.63,
+                    "face_dimensions": [
+                        [
+                            230,
+                            225,
+                            58,
+                            58
+                        ],
+                        [
+                            146,
+                            102,
+                            176,
+                            176
+                        ],
+                        [
+                            352,
+                            172,
+                            111,
+                            111
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "73": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "inception_ver3.jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.99,
+                    "face_dimensions": [
+                        [
+                            270,
+                            190,
+                            34,
+                            34
+                        ],
+                        [
+                            365,
+                            115,
+                            32,
+                            32
+                        ],
+                        [
+                            271,
+                            326,
+                            27,
+                            27
+                        ],
+                        [
+                            243,
+                            452,
+                            21,
+                            21
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "74": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "interstellar_ver2.jpg": {
+                    "faces_detected": 1,
+                    "detection_confidence": "low",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.27,
+                    "face_dimensions": [
+                        [
+                            224,
+                            101,
+                            41,
+                            41
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 1,
+                "average_faces_per_image": 1.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "75": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Pretty Woman (blue).jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 10.86,
+                    "face_dimensions": [
+                        [
+                            348,
+                            188,
+                            96,
+                            96
+                        ],
+                        [
+                            270,
+                            216,
+                            269,
+                            269
+                        ],
+                        [
+                            219,
+                            176,
+                            87,
+                            87
+                        ],
+                        [
+                            242,
+                            177,
+                            173,
+                            173
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "76": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "Pretty Woman.jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 10.39,
+                    "face_dimensions": [
+                        [
+                            352,
+                            188,
+                            88,
+                            88
+                        ],
+                        [
+                            244,
+                            192,
+                            212,
+                            212
+                        ],
+                        [
+                            280,
+                            256,
+                            248,
+                            248
+                        ],
+                        [
+                            209,
+                            172,
+                            97,
+                            97
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "77": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "PrincessBride.png": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 4.96,
+                    "face_dimensions": [
+                        [
+                            188,
+                            278,
+                            30,
+                            30
+                        ],
+                        [
+                            267,
+                            338,
+                            144,
+                            144
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "78": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "searching_for_bobby_fischer.jpg": {
+                    "faces_detected": 4,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 6.91,
+                    "face_dimensions": [
+                        [
+                            163,
+                            19,
+                            152,
+                            152
+                        ],
+                        [
+                            242,
+                            30,
+                            136,
+                            136
+                        ],
+                        [
+                            208,
+                            0,
+                            291,
+                            291
+                        ],
+                        [
+                            341,
+                            177,
+                            153,
+                            153
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 4,
+                "average_faces_per_image": 4.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "79": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "sleepless_in_seattle.jpg": {
+                    "faces_detected": 2,
+                    "detection_confidence": "medium",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 5.66,
+                    "face_dimensions": [
+                        [
+                            62,
+                            154,
+                            32,
+                            32
+                        ],
+                        [
+                            377,
+                            147,
+                            41,
+                            41
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 2,
+                "average_faces_per_image": 2.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "80": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "TheFavourite.jpg": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "romcom_enhanced",
+                    "processing_time": 16.85,
+                    "face_dimensions": [
+                        [
+                            278,
+                            454,
+                            1092,
+                            1092
+                        ],
+                        [
+                            1522,
+                            1298,
+                            137,
+                            137
+                        ],
+                        [
+                            982,
+                            1874,
+                            129,
+                            129
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        },
+        "81": {
+            "timestamp": "2025-02-21",
+            "metrics": {
+                "contact.webp": {
+                    "faces_detected": 3,
+                    "detection_confidence": "high",
+                    "detection_method": "haarcascade",
+                    "processing_time": 0.74,
+                    "face_dimensions": [
+                        [
+                            185,
+                            511,
+                            66,
+                            66
+                        ],
+                        [
+                            209,
+                            320,
+                            65,
+                            65
+                        ],
+                        [
+                            344,
+                            508,
+                            78,
+                            78
+                        ]
+                    ]
+                }
+            },
+            "global_metrics": {
+                "total_images_processed": 1,
+                "total_faces_detected": 3,
+                "average_faces_per_image": 3.0,
+                "successful_detections": 1,
+                "failed_detections": 0
+            }
+        }
+    }
+}
